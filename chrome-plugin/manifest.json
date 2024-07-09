@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Artifact Extractor",
+  "version": "1.0",
+  "description": "从Claude页面抓取代码并上传到服务器",
+  "permissions": ["activeTab", "scripting", "clipboardRead", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

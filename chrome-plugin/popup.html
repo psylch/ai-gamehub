@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Artifact Extractor</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; text-align: center; }
+    h1 { font-size: 20px; color: #333; }
+    button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+    p { color: #555; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Claude Artifact Extractor</h1>
+    <p>是否上传复制代码到服务器？</p>
+    <button id="confirm">是</button>
+    <button id="cancel">否</button>
+    <p id="status" class="hidden"></p>
+    <p id="error" class="hidden"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
